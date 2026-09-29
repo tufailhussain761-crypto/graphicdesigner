@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tufail Hussain | Professional Graphic Designer</title>
+
+<meta name="description"
+content="Tufail Hussain is a professional graphic designer specializing in logo design, branding, social media designs, posters and Photoshop editing.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b0f19;
+    color:#fff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(11,15,25,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #252b3a;
+}
+
+.navbar{
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#00e5ff;
+}
+
+.nav-links{
+    display:flex;
+    gap:28px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#ddd;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#00e5ff;
+}
+
+.menu{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:75px;
+    background:
+    radial-gradient(circle at 80% 30%, #143b50 0%, transparent 35%),
+    #0b0f19;
+}
+
+.hero-content{
+    max-width:720px;
+}
+
+.small-title{
+    color:#00e5ff;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:65px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#00e5ff;
+}
+
+.hero p{
+    color:#b8becb;
+    font-size:19px;
+    max-width:650px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 25px;
+    border-radius:8px;
+    background:#00e5ff;
+    color:#071018;
+    font-weight:bold;
+    transition:.3s;
+    display:inline-block;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 30px rgba(0,229,255,.25);
+}
+
+.btn-outline{
+    background:transparent;
+    color:#fff;
+    border:1px solid #00e5ff;
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-title h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.section-title span{
+    color:#00e5ff;
+}
+
+.section-title p{
+    color:#9ca3af;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-box{
+    background:#111724;
+    border:1px solid #252d3d;
+    border-radius:18px;
+    padding:35px;
+}
+
+.about-box h3{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.about-box p{
+    color:#b5bdca;
+}
+
+.info{
+    margin-top:25px;
+}
+
+.info div{
+    margin:12px 0;
+    color:#c8ced8;
+}
+
+.info strong{
+    color:#00e5ff;
+}
+
+/* SERVICES */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.service-card{
+    padding:30px 22px;
+    background:#111724;
+    border:1px solid #252d3d;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    border-color:#00e5ff;
+}
+
+.icon{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.service-card h3{
+    margin-bottom:10px;
+}
+
+.service-card p{
+    color:#9ca3af;
+    font-size:15px;
+}
+
+/* PORTFOLIO */
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.project{
+    height:270px;
+    border-radius:15px;
+    overflow:hidden;
+    position:relative;
+    background:#171d2a;
+    border:1px solid #252d3d;
+}
+
+.project img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.project:hover img{
+    transform:scale(1.08);
+}
+
+.project-info{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding:25px 20px 18px;
+    background:linear-gradient(transparent,rgba(0,0,0,.95));
+}
+
+.project-info h3{
+    font-size:19px;
+}
+
+/* SKILLS */
+
+.skills{
+    max-width:800px;
+    margin:auto;
+}
+
+.skill{
+    margin-bottom:25px;
+}
+
+.skill-title{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+}
+
+.bar{
+    height:10px;
+    background:#202838;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress{
+    height:100%;
+    background:#00e5ff;
+    border-radius:20px;
+}
+
+.p95{width:95%}
+.p90{width:90%}
+.p85{width:85%}
+.p80{width:80%}
+
+/* CONTACT */
+
+.contact-box{
+    max-width:800px;
+    margin:auto;
+    background:#111724;
+    padding:40px;
+    border:1px solid #252d3d;
+    border-radius:18px;
+    text-align:center;
+}
+
+.contact-box p{
+    color:#aeb6c3;
+    margin:15px 0 30px;
+}
+
+.contact-links{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.contact-btn{
+    padding:13px 22px;
+    border:1px solid #00e5ff;
+    border-radius:8px;
+    color:#00e5ff;
+    transition:.3s;
+}
+
+.contact-btn:hover{
+    background:#00e5ff;
+    color:#071018;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #252b3a;
+    color:#8d96a5;
+}
+
+footer span{
+    color:#00e5ff;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .portfolio-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero h1{
+        font-size:50px;
+    }
+}
+
+@media(max-width:650px){
+
+    .nav-links{
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+        background:#0b0f19;
+        flex-direction:column;
+        text-align:center;
+        padding:25px;
+        display:none;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .services-grid,
+    .portfolio-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section-title h2{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+<div class="container navbar">
+
+<a href="#home" class="logo">
+Tufail<span>Design</span>
+</a>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div class="menu" onclick="toggleMenu()">☰</div>
+
+</div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="small-title">
+Hello, I'm a Graphic Designer
+</div>
+
+<h1>
+Creative <span>Graphic Designer</span>
+</h1>
+
+<p>
+I create modern, professional and unique designs
+that help businesses build a strong visual identity
+and attract more customers.
+</p>
+
+<div class="buttons">
+
+<a href="#portfolio" class="btn">
+View My Work
+</a>
+
+<a href="#contact" class="btn btn-outline">
+Hire Me
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-title">
+<h2>About <span>Me</span></h2>
+<p>Learn more about my design journey</p>
+</div>
+
+<div class="about">
+
+<div class="about-box">
+
+<h3>Who I Am</h3>
+
+<p>
+I am a creative graphic designer focused on creating
+clean, modern and professional visual designs.
+I work with Adobe Illustrator and Adobe Photoshop
+to transform ideas into attractive designs.
+</p>
+
+<div class="info">
+
+<div>
+<strong>Role:</strong> Graphic Designer
+</div>
+
+<div>
+<strong>Tools:</strong> Adobe Illustrator & Photoshop
+</div>
+
+<div>
+<strong>Specialization:</strong> Branding & Visual Design
+</div>
+
+<div>
+<strong>Availability:</strong> Available for Projects
+</div>
+
+</div>
+
+</div>
+
+<div class="about-box">
+
+<h3>My Goal</h3>
+
+<p>
+My goal is to help businesses, startups and individuals
+present themselves professionally through strong
+and memorable graphic design.
+</p>
+
+<br>
+
+<p>
+Every project is designed according to the client's
+requirements, brand style and target audience.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-title">
+<h2>My <span>Services</span></h2>
+<p>Professional design services for your business</p>
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+<div class="icon">🎨</div>
+<h3>Logo Design</h3>
+<p>
+Unique and professional logos that represent your brand.
+</p>
+</div>
+
+<div class="service-card">
+<div class="icon">🏢</div>
+<h3>Brand Identity</h3>
+<p>
+Complete visual identity for businesses and startups.
+</p>
+</div>
+
+<div class="service-card">
+<div class="icon">📱</div>
+<h3>Social Media</h3>
+<p>
+Attractive social media posts, banners and advertisements.
+</p>
+</div>
+
+<div class="service-card">
+<div class="icon">🖼️</div>
+<h3>Poster & Flyer</h3>
+<p>
+Creative posters and flyers for promotions and events.
+</p>
+</div>
+
+<div class="service-card">
+<div class="icon">💳</div>
+<h3>Business Cards</h3>
+<p>
+Modern and professional business card designs.
+</p>
+</div>
+
+<div class="service-card">
+<div class="icon">📰</div>
+<h3>Banner Design</h3>
+<p>
+Professional banners for businesses and advertising.
+</p>
+</div>
+
+<div class="service-card">
+<div class="icon">✨</div>
+<h3>Photoshop Editing</h3>
+<p>
+Professional photo editing and image manipulation.
+</p>
+</div>
+
+<div class="service-card">
+<div class="icon">✏️</div>
+<h3>Illustrator Design</h3>
+<p>
+Vector illustrations and creative graphic artwork.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+
+<div class="container">
+
+<div class="section-title">
+<h2>My <span>Portfolio</span></h2>
+<p>Some examples of my creative work</p>
+</div>
+
+<div class="portfolio-grid">
+
+<!-- Replace these image URLs with your own designs -->
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=900&q=80">
+<div class="project-info">
+<h3>Brand Identity</h3>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1629752187687-3d3c7ea3a21b?auto=format&fit=crop&w=900&q=80">
+<div class="project-info">
+<h3>Creative Design</h3>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?auto=format&fit=crop&w=900&q=80">
+<div class="project-info">
+<h3>Poster Design</h3>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=80">
+<div class="project-info">
+<h3>Logo Concept</h3>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80">
+<div class="project-info">
+<h3>Branding Project</h3>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=900&q=80">
+<div class="project-info">
+<h3>Social Media Design</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>My <span>Skills</span></h2>
+
+<p>
+Design tools and creative skills
+</p>
+
+</div>
+
+<div class="skills">
+
+<div class="skill">
+
+<div class="skill-title">
+<span>Adobe Illustrator</span>
+<span>95%</span>
+</div>
+
+<div class="bar">
+<div class="progress p95"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-title">
+<span>Adobe Photoshop</span>
+<span>90%</span>
+</div>
+
+<div class="bar">
+<div class="progress p90"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-title">
+<span>Logo Design</span>
+<span>85%</span>
+</div>
+
+<div class="bar">
+<div class="progress p85"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-title">
+<span>Branding</span>
+<span>80%</span>
+</div>
+
+<div class="bar">
+<div class="progress p80"></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Let's <span>Work Together</span></h2>
+
+<p>
+Have a design project? Contact me today.
+</p>
+
+</div>
+
+<div class="contact-box">
+
+<h3>Start Your Project</h3>
+
+<p>
+I am available for logo design, branding,
+social media graphics and other graphic design projects.
+</p>
+
+<div class="contact-links">
+
+<!-- CHANGE YOUR EMAIL HERE -->
+
+<a
+href="mailto:tufailhussais@gmail.com"
+class="contact-btn">
+📧 Email Me
+</a>
+
+<!-- CHANGE YOUR WHATSAPP NUMBER HERE -->
+
+<a
+href="https://wa.me/03554003241"
+class="contact-btn"
+target="_blank">
+💬 WhatsApp
+</a>
+
+<!-- ADD YOUR FIVERR PROFILE -->
+
+<a
+href="https://www.MrTufail.com/"
+class="contact-btn"
+target="_blank">
+💼 Fiverr
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 <span>Tufail Hussain</span>.
+All Rights Reserved.
+</p>
+
+</footer>
+
+
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("navLinks")
+    .classList
+    .toggle("active");
+
+}
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        document
+        .getElementById("navLinks")
+        .classList
+        .remove("active");
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
